@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, HIPImageCropperViewPosition) {
 
 @interface HIPImageCropperView : UIView <UIScrollViewDelegate>
 
+@property (nonatomic, readwrite, assign) BOOL enableZoom;
 @property (nonatomic, readwrite, strong) UIScrollView *scrollView;
 @property (nonatomic, readwrite, strong) UIView *overlayView;
 @property (nonatomic, readwrite, strong) UIImage *originalImage;

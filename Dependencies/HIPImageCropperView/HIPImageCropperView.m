@@ -40,6 +40,8 @@
         return nil;
     }
     
+    _enableZoom = YES;
+    
     [self setBackgroundColor:[UIColor blackColor]];
     [self setAutoresizingMask:(UIViewAutoresizingFlexibleWidth |
                                UIViewAutoresizingFlexibleHeight)];
@@ -346,7 +348,7 @@
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    return self.scrollView.maximumZoomScale > self.scrollView.minimumZoomScale? self.imageView: nil;
+    return self.enableZoom? self.imageView: nil;
 }
 
 - (void)setBorderVisible:(BOOL)borderVisible {
