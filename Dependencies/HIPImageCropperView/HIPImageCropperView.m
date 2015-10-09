@@ -13,9 +13,7 @@
 
 @interface HIPImageCropperView ()
 
-@property (nonatomic, readwrite, strong) UIScrollView *scrollView;
 @property (nonatomic, readwrite, strong) UIImageView *imageView;
-@property (nonatomic, readwrite, strong) UIView *overlayView;
 @property (nonatomic, strong) UIActivityIndicatorView *loadIndicator;
 @property (nonatomic, assign) CGFloat cropSizeRatio;
 @property (nonatomic, assign) CGSize targetSize;
