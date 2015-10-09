@@ -346,7 +346,7 @@
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    return self.imageView;
+    return self.scrollView.maximumZoomScale > self.scrollView.minimumZoomScale? self.imageView: nil;
 }
 
 - (void)setBorderVisible:(BOOL)borderVisible {
